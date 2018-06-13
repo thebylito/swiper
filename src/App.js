@@ -8,7 +8,7 @@ export default class App extends Component {
       <View style={styles.container}>
         <Swiper
           cards={['1', '2']}
-          renderCard={(CardE) => {
+          renderCard={(card) => {
             return (
               <View style={styles.card}>
                 <View style={{ flex: 1 }}>
@@ -17,7 +17,7 @@ export default class App extends Component {
                       textAlign: 'center',
                     }}
                   >
-                    Spread Calculator
+                    Spread Calculator: Card: {card}
                   </Text>
 
                   <View
